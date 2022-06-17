@@ -76,7 +76,7 @@ const Projects = () => {
   };
   return (
     <Section id="projects">
-      <Title>Here are a few projects I have worked on</Title>
+      <Title>Here are a few projects I have built</Title>
       <Carousel>
         <Slider {...settings}>
           <Card
