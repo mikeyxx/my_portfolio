@@ -81,7 +81,7 @@ const Projects = () => {
         <Slider {...settings}>
           <Card
             name={
-              <a href="#/" target="blank">
+              <a href="https://react-ministore.netlify.app/" target="blank">
                 Mini Store
                 <i
                   style={{
