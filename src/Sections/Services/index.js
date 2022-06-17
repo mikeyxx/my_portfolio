@@ -5,6 +5,9 @@ import DesignSvg from "../../assets/Design.svg";
 import DevelopSvg from "../../assets/Develope.svg";
 import Tube from "../../assets/3dtube.png";
 import Cone from "../../assets/3dtriangle.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 const ServiceSection = styled.div`
   width: 100vw;
@@ -25,7 +28,7 @@ const Background = styled.div`
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 100%;
+  height: 85vh;
   background-color: var(--black);
   background-size: auto 100vh;
   z-index: -1;
@@ -63,7 +66,8 @@ const Triangle = styled.span`
 
 const Content = styled.div`
   display: flex;
-  margin: 3rem 10rem;
+  margin: 10rem 10rem;
+  // margin: 3rem 10rem;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -91,18 +95,125 @@ const OBJ = styled.div`
 `;
 
 const Services = () => {
+  const ref = useRef(null);
+  const revealRefs = useRef([]);
+  revealRefs.current = [];
+  gsap.registerPlugin(ScrollTrigger);
+
+  const addToRefs = (el) => {
+    if (el && !revealRefs.current.includes(el)) {
+      revealRefs.current.push(el);
+    }
+    // console.log("reveal refs", revealRefs.current);
+  };
+
+  useEffect(() => {
+    const element = ref.current;
+    const line = document.getElementById("line");
+    const t1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.getElementById("skills"),
+        start: "top top+=180",
+        end: "bottom bottom",
+        pin: element,
+        pinReparent: true,
+        // markers: true,
+      },
+    });
+
+    t1.fromTo(
+      line,
+      {
+        height: "15rem",
+      },
+      {
+        height: "3rem",
+        duration: 2,
+        scrollTrigger: {
+          trigger: line,
+          start: "top top+=200",
+          end: "bottom top+=220",
+          scrub: true,
+        },
+      }
+    );
+
+    revealRefs.current.forEach((el, index) => {
+      t1.from(el.childNodes[0], {
+        x: -300,
+        opacity: 0,
+        duration: 2,
+        ease: "power2",
+
+        scrollTrigger: {
+          trigger: el,
+          id: `section-${index + 1}`,
+          start: "top center+=100",
+          end: "bottom bottom-=200",
+          scrub: true,
+          snap: true,
+          markers: true,
+        },
+      })
+        .to(el.childNodes[1], {
+          transform: "scale(0)",
+          duration: 2,
+          ease: "power2.inOut",
+
+          scrollTrigger: {
+            trigger: el.childNodes[1],
+            id: `section-${index + 1}`,
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+            snap: true,
+            markers: true,
+          },
+        })
+        .from(el.childNodes[2], {
+          y: 400,
+          duration: 2,
+          ease: "power2",
+
+          scrollTrigger: {
+            trigger: el,
+            id: `section-${index + 1}`,
+            start: "top center+=100",
+            end: "bottom center-=200",
+            scrub: true,
+            snap: false,
+            markers: true,
+          },
+        })
+        .to(el, {
+          opacity: 1,
+          ease: "power2",
+
+          scrollTrigger: {
+            trigger: el,
+            id: `section-${index + 1}`,
+            start: "top top+=200",
+            end: "center top+=300",
+            scrub: true,
+            snap: true,
+            markers: true,
+          },
+        });
+    });
+  }, []);
+
   return (
     <ServiceSection id="skills">
-      <Background>
+      <Background ref={ref}>
         <Title>What I Do</Title>
-        <Line />
+        <Line id="line" />
         <Triangle />
       </Background>
 
-      <Content>
+      <Content ref={addToRefs}>
         <TextBlock
           topic="Design"
-          title="Using CSS and CSS pre-processor and frameworks like SASS, Tailwind css, Styled Component and Chakra UI"
+          title="Using CSS and CSS pre-processor and frameworks like SASS, Tailwind css, Styled Component, GSAP and Chakra UI"
           subText="I design interactive and reponsive web applications"
         />
         <OBJ>
@@ -110,7 +221,7 @@ const Services = () => {
         </OBJ>
         <SvgBlock svg={DesignSvg} />
       </Content>
-      <Content>
+      <Content ref={addToRefs}>
         <TextBlock
           topic="Build"
           title="Strong familiarity with Javascript, React, Redux, Axios and GraphQL"
