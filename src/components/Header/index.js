@@ -17,10 +17,12 @@ const Headers = styled.header`
 
   @media only screen and (max-width: 64em) {
     padding: 0.5rem 3rem;
+    background: rgba(53, 53, 63, 0.95);
   }
 
   @media only screen and (max-width: 40em) {
     padding: 0.5rem 1.5rem;
+    background: rgba(53, 53, 63, 0.95);
   }
 `;
 
@@ -74,14 +76,15 @@ const Button = styled.button`
   border-radius: 20px;
   color: var(--white);
   font-weight: 600;
-  cursor: pointer;
+
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
   }
 
-  &:focus {
+  &:active {
     transform: scale(0.9);
   }
 `;
@@ -123,7 +126,11 @@ const HamburgerBtn = styled.button`
 `;
 
 const MobileMenu = styled.div`
-  display: flex;
+  display: none;
+  @media only screen and (max-width: 48em) {
+    display: flex;
+  }
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -151,10 +158,24 @@ const MobileMenu = styled.div`
 
 const Header = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
 
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
+
+  const ScrollUp = (id, e) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
+  const handleClick = (id, e) => {
+    setClick(!click);
+    ScrollUp(id, e);
+  };
 
   useEffect(() => {
     const element = ref.current;
@@ -210,32 +231,40 @@ const Header = () => {
         <h3>MikeCodes</h3>
       </Logo>
       <Nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">
+        <a href="#home" onClick={(e) => handleClick("home", e)}>
+          Home
+        </a>
+        <a href="#about" onClick={(e) => handleClick("about", e)}>
+          About Me
+        </a>
+        <a href="#skills" onClick={(e) => handleClick("skills", e)}>
+          Skills
+        </a>
+        <a href="#projects" onClick={(e) => handleClick("projects", e)}>
+          Projects
+        </a>
+        <a href="#contact" onClick={(e) => handleClick("contact", e)}>
           <Button>Contact Me</Button>
         </a>
       </Nav>
-      <HamburgerBtn onClick={handleClick} clicked={click}>
+      <HamburgerBtn onClick={() => setClick(!click)} clicked={click}>
         <span />
       </HamburgerBtn>
       <MobileMenu clicked={click}>
-        <a href="#home" onClick={handleClick}>
+        <a href="#home" onClick={(e) => handleClick("home", e)}>
           Home
         </a>
-        <a href="#about" onClick={handleClick}>
-          About Us
+        <a href="#about" onClick={(e) => handleClick("about", e)}>
+          About Me
         </a>
-        <a href="#services" onClick={handleClick}>
+        <a href="#skills" onClick={(e) => handleClick("skills", e)}>
           Skills
         </a>
-        <a href="#projects" onClick={handleClick}>
+        <a href="#projects" onClick={(e) => handleClick("projects", e)}>
           Projects
         </a>
-        <a href="#contact" onClick={handleClick}>
-          <Button>Contact Us</Button>
+        <a href="#contact" onClick={(e) => handleClick("contact", e)}>
+          <Button>Contact Me</Button>
         </a>
       </MobileMenu>
     </Headers>

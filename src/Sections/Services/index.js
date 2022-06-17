@@ -78,6 +78,13 @@ const Content = styled.div`
       margin-bottom: 2rem;
     }
   }
+
+  @media only screen and (max-width: 40em) {
+    margin: 10rem calc(2rem + 3vw);
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
 `;
 
 const OBJ = styled.div`
@@ -110,6 +117,8 @@ const Services = () => {
   useEffect(() => {
     const element = ref.current;
     const line = document.getElementById("line");
+    const mq = window.matchMedia("max-width: 40em");
+
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: document.getElementById("skills"),
@@ -139,39 +148,71 @@ const Services = () => {
     );
 
     revealRefs.current.forEach((el, index) => {
-      t1.from(el.childNodes[0], {
-        x: -300,
-        opacity: 0,
-        duration: 2,
-        ease: "power2",
-
-        scrollTrigger: {
-          trigger: el,
-          id: `section-${index + 1}`,
-          start: "top center+=100",
-          end: "bottom bottom-=200",
-          scrub: true,
-          snap: true,
-          markers: true,
-        },
-      })
-        .to(el.childNodes[1], {
-          transform: "scale(0)",
+      if (mq.matches) {
+        t1.from(el.childNodes[0], {
+          x: -300,
+          opacity: 0,
           duration: 2,
-          ease: "power2.inOut",
+          ease: "power2",
 
           scrollTrigger: {
-            trigger: el.childNodes[1],
+            trigger: el,
             id: `section-${index + 1}`,
-            start: "top center",
-            end: "bottom center",
+            start: "top center+=200",
+            end: "bottom bottom-=100",
             scrub: true,
             snap: true,
-            markers: true,
+            // markers: true,
           },
         })
-        .from(el.childNodes[2], {
-          y: 400,
+          .to(el.childNodes[1], {
+            transform: "scale(0)",
+            duration: 2,
+            ease: "power2.inOut",
+
+            scrollTrigger: {
+              trigger: el.childNodes[1],
+              id: `section-${index + 1}`,
+              start: "top center",
+              end: "bottom center",
+              scrub: true,
+              snap: true,
+              // markers: true,
+            },
+          })
+          .from(el.childNodes[2], {
+            y: 400,
+            duration: 2,
+            ease: "power2",
+
+            scrollTrigger: {
+              trigger: el,
+              id: `section-${index + 1}`,
+              start: "top center+=100",
+              end: "bottom center-=200",
+              scrub: true,
+              snap: false,
+              // markers: true,
+            },
+          })
+          .to(el, {
+            opacity: 1,
+            ease: "power2",
+
+            scrollTrigger: {
+              trigger: el,
+              id: `section-${index + 1}`,
+              start: "top top+=300",
+              end: "center top+=300",
+              scrub: true,
+              snap: true,
+              // markers: true,
+            },
+          });
+      } else {
+        t1.from(el.childNodes[0], {
+          x: -300,
+          opacity: 0,
           duration: 2,
           ease: "power2",
 
@@ -179,26 +220,57 @@ const Services = () => {
             trigger: el,
             id: `section-${index + 1}`,
             start: "top center+=100",
-            end: "bottom center-=200",
-            scrub: true,
-            snap: false,
-            markers: true,
-          },
-        })
-        .to(el, {
-          opacity: 1,
-          ease: "power2",
-
-          scrollTrigger: {
-            trigger: el,
-            id: `section-${index + 1}`,
-            start: "top top+=200",
-            end: "center top+=300",
+            end: "bottom bottom-=200",
             scrub: true,
             snap: true,
-            markers: true,
+            // markers: true,
           },
-        });
+        })
+          .to(el.childNodes[1], {
+            transform: "scale(0)",
+            duration: 2,
+            ease: "power2.inOut",
+
+            scrollTrigger: {
+              trigger: el.childNodes[1],
+              id: `section-${index + 1}`,
+              start: "top center",
+              end: "bottom center",
+              scrub: true,
+              snap: true,
+              // markers: true,
+            },
+          })
+          .from(el.childNodes[2], {
+            y: 400,
+            duration: 2,
+            ease: "power2",
+
+            scrollTrigger: {
+              trigger: el,
+              id: `section-${index + 1}`,
+              start: "top center+=100",
+              end: "bottom center-=200",
+              scrub: true,
+              snap: false,
+              // markers: true,
+            },
+          })
+          .to(el, {
+            opacity: 1,
+            ease: "power2",
+
+            scrollTrigger: {
+              trigger: el,
+              id: `section-${index + 1}`,
+              start: "top top+=200",
+              end: "center top+=300",
+              scrub: true,
+              snap: true,
+              // markers: true,
+            },
+          });
+      }
     });
   }, []);
 

@@ -26,10 +26,14 @@ const Topic = styled.div`
   border-radius: 20px;
   letter-spacing: 1.2px;
 
-  @media only screen and (max-width: 40em) {
-    font-size: calc(0.8rem + 0.4vw);
-    margin-bottom: 1rem;
+  @media only screen and (max-width: 48em) {
+    font-size: calc(0.4rem + 0.8vw);
   }
+
+  // @media only screen and (max-width: 40em) {
+  //   font-size: calc(0.8rem + 0.4vw);
+  //   margin-bottom: 1rem;
+  // }
 `;
 const Circle = styled.span`
   display: inline-block;
@@ -43,15 +47,21 @@ const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
+  @media only screen and (max-width: 48em) {
+    font-size: calc(1rem + 1.5vw);
+  }
 `;
 const SubText = styled.h5`
   font-size: calc(0.5rem + 0.5vw);
   color: var(--nav2);
-
-  @media only screen and (max-width: 40em) {
-    font-size: calc(0.8rem + 0.4vw);
-    margin-top: 1rem;
+  @media only screen and (max-width: 48em) {
+    font-size: calc(0.5rem + 1vw);
   }
+
+  // @media only screen and (max-width: 40em) {
+  //   font-size: calc(0.8rem + 0.4vw);
+  //   margin-top: 1rem;
+  // }
 `;
 
 const TextBlock = ({ topic, title, subText, children }) => {
