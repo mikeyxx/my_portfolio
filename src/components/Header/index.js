@@ -152,7 +152,8 @@ const Header = () => {
       <Nav>
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
-        <a href="#Skills">Skills</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">
           <Button>Contact Me</Button>
         </a>
@@ -169,6 +170,9 @@ const Header = () => {
         </a>
         <a href="#services" onClick={handleClick}>
           Services
+        </a>
+        <a href="#projects" onClick={handleClick}>
+          Projects
         </a>
         <a href="#contact" onClick={handleClick}>
           <Button>Contact Us</Button>

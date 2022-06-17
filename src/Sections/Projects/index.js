@@ -4,10 +4,9 @@ import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import Card from "../../components/Card";
-import Avatar1 from "../../assets/avatar-1.jpg";
-import Avatar2 from "../../assets/avatar-2.jpg";
-import Avatar3 from "../../assets/avatar-3.jpg";
-import Avatar4 from "../../assets/avatar-4.jpg";
+import Ministore from "../../assets/avatar-1.png";
+import BirthdayReminder from "../../assets/avatar-2.png";
+import ReactCalculator from "../../assets/avatar-3.png";
 
 const Section = styled.div`
   display: flex;
@@ -76,14 +75,64 @@ const Projects = () => {
     slidesToScroll: 1,
   };
   return (
-    <Section>
+    <Section id="projects">
       <Title>Here are a few projects I have worked on</Title>
       <Carousel>
         <Slider {...settings}>
-          <Card text="abcde" name="John Okigbo" image={Avatar1} />
-          <Card text="abcde" name="John Okigbo" image={Avatar2} />
-          <Card text="abcde" name="John Okigbo" image={Avatar3} />
-          <Card text="abcde" name="John Okigbo" image={Avatar4} />
+          <Card
+            name={
+              <a href="#/" target="blank">
+                Mini Store
+                <i
+                  style={{
+                    fontWeight: 300,
+                    fontSize: "0.7rem",
+                    textDecoration: "underline",
+                  }}
+                >
+                  (click to see live)
+                </i>
+              </a>
+            }
+            image={Ministore}
+          />
+          <Card
+            name={
+              <a href="https://birthday-rem-app.netlify.app/" target="blank">
+                Birthday Reminder{" "}
+                <i
+                  style={{
+                    fontWeight: 300,
+                    fontSize: "0.7rem",
+                    textDecoration: "underline",
+                  }}
+                >
+                  (click to see live)
+                </i>
+              </a>
+            }
+            image={BirthdayReminder}
+          />
+          <Card
+            name={
+              <a
+                href="https://mikeyxx.github.io/react-calculator-application/"
+                target="blank"
+              >
+                React Calculator
+                <i
+                  style={{
+                    fontWeight: 300,
+                    fontSize: "0.7rem",
+                    textDecoration: "underline",
+                  }}
+                >
+                  (click to see live)
+                </i>
+              </a>
+            }
+            image={ReactCalculator}
+          />
         </Slider>
       </Carousel>
     </Section>

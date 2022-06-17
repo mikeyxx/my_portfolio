@@ -58,10 +58,10 @@ const Icon = styled.div`
 
 const Contact = () => {
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <Title>Get in touch</Title>
       <Icon>
-        <a href="https://Twitter.com/topboy_mikey">
+        <a href="https://Twitter.com/topboy_mikey" target="blank">
           <img
             src={Twitter}
             alt="Twitter"
@@ -72,7 +72,11 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="https://LinkedIn.com">
+        <a
+          href="https://linkedin.com/in/michael-27
+"
+          target="blank"
+        >
           <img
             src={LinkedIn}
             alt="LinkedIn"
@@ -83,7 +87,7 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="https://github.com">
+        <a href="https://github.com/mikeyxx" target="blank">
           <img
             src={GitHub}
             alt="Github"
@@ -94,7 +98,7 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="mailto:michaelogboo@gmail.com">
+        <a href="mailto:michaelogboo@gmail.com" target="blank">
           <img
             src={Email}
             alt="Gmail"

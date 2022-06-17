@@ -177,7 +177,7 @@ const MobileSvg = styled.img`
 
 const HeroSection = () => {
   return (
-    <HerosSection>
+    <HerosSection id="home">
       <Blobs>
         <PinkBlob>
           <img src={Pink} alt="Pink Blob" width="400" height="400" />

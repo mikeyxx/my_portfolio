@@ -3,10 +3,8 @@ import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
 import DesignSvg from "../../assets/Design.svg";
 import DevelopSvg from "../../assets/Develope.svg";
-import SupportSvg from "../../assets/Support.svg";
 import Tube from "../../assets/3dtube.png";
 import Cone from "../../assets/3dtriangle.png";
-import Capsule from "../../assets/3dcapsule.png";
 
 const ServiceSection = styled.div`
   width: 100vw;
@@ -94,7 +92,7 @@ const OBJ = styled.div`
 
 const Services = () => {
   return (
-    <ServiceSection>
+    <ServiceSection id="skills">
       <Background>
         <Title>What I Do</Title>
         <Line />
@@ -104,8 +102,8 @@ const Services = () => {
       <Content>
         <TextBlock
           topic="Design"
-          title="We build award winning Designs"
-          subText="We help clients to build great designs to attract more customers "
+          title="Using CSS and CSS pre-processor and frameworks like SASS, Tailwind css, Styled Component and Chakra UI"
+          subText="I design interactive and reponsive web applications"
         />
         <OBJ>
           <img src={Tube} alt="" width="400" height="400" />
@@ -114,25 +112,14 @@ const Services = () => {
       </Content>
       <Content>
         <TextBlock
-          topic="Develop"
-          title="We Develop high quality Web & App"
-          subText="We build appropriate solution to develop your website & app with best tools available "
+          topic="Build"
+          title="Strong familiarity with Javascript, React, Redux, Axios and GraphQL"
+          subText="Using the listed tools above to build any web application "
         />
         <OBJ>
           <img src={Cone} alt="" width="400" height="400" />
         </OBJ>
         <SvgBlock svg={DevelopSvg} />
-      </Content>
-      <Content>
-        <TextBlock
-          topic="Support"
-          title="We provide support for your digital presence"
-          subText="Once your system is online, we will stay on hand to help you use it and provide tech "
-        />
-        <OBJ>
-          <img src={Capsule} alt="" width="400" height="400" />
-        </OBJ>
-        <SvgBlock svg={SupportSvg} />
       </Content>
     </ServiceSection>
   );
