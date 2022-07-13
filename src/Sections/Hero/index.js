@@ -5,6 +5,7 @@ import White from "../../assets/blob white.png";
 import Purple from "../../assets/blob purple.png";
 import Arrow from "../../assets/Arrow Right.svg";
 import Mobile from "../../assets/mobile.svg";
+import { useState } from "react";
 
 const dance = keyframes`
 0% {transform: translateY(-5px)}
@@ -176,6 +177,22 @@ const MobileSvg = styled.img`
 `;
 
 const HeroSection = () => {
+  const [click, setClick] = useState(false);
+
+  const ScrollUp = (id, e) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
+  const handleClick = (id, e) => {
+    setClick(!click);
+    ScrollUp(id, e);
+  };
   return (
     <HerosSection id="home">
       <Blobs>
@@ -199,10 +216,12 @@ const HeroSection = () => {
           <SubText>
             Helping you hit those personal and business milestones{" "}
           </SubText>
-          <CTA>
-            Get in touch &nbsp;{" "}
-            <img src={Arrow} alt="CTA" width="400" height="400" />
-          </CTA>
+          <a href="#contact" onClick={(e) => handleClick("contact", e)}>
+            <CTA>
+              Get in touch &nbsp;{" "}
+              <img src={Arrow} alt="CTA" width="400" height="400" />
+            </CTA>
+          </a>
         </LeftBlock>
         <MobileSvg src={Mobile} alt="Mobile Svg" width="400" height="400" />
       </MainContent>
