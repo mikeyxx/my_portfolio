@@ -91,32 +91,32 @@ const LeftBlock = styled.div`
     filter: drop-shadow(2px 4px 6px var(--black));
   }
 `;
-const Topic = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--nav);
-  font-weight: 700;
-  font-size: calc(0.4rem + 0.4vw);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  letter-spacing: 1.2px;
+// const Topic = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: var(--nav);
+//   font-weight: 700;
+//   font-size: calc(0.4rem + 0.4vw);
+//   padding: 0.5rem 1rem;
+//   border-radius: 20px;
+//   letter-spacing: 1.2px;
 
-  @media only screen and (max-width: 40em) {
-    font-size: calc(0.8rem + 0.4vw);
-    margin-bottom: 1rem;
-  }
-`;
-const Circle = styled.span`
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: var(--purple);
-  margin-right: 0.5rem;
-`;
+//   @media only screen and (max-width: 40em) {
+//     font-size: calc(0.8rem + 0.4vw);
+//     margin-bottom: 1rem;
+//   }
+// `;
+// const Circle = styled.span`
+//   display: inline-block;
+//   width: 1rem;
+//   height: 1rem;
+//   border-radius: 50%;
+//   background-color: var(--purple);
+//   margin-right: 0.5rem;
+// `;
 const Title = styled.h1`
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
 `;
@@ -209,13 +209,11 @@ const HeroSection = () => {
 
       <MainContent>
         <LeftBlock>
-          <Topic>
-            <Circle /> <span>I Create Webpages...</span>
-          </Topic>
-          <Title>To Transform your digital presence</Title>
-          <SubText>
-            Helping you hit those personal and business milestones{" "}
-          </SubText>
+          <Title>
+            Hey there👋, I'm Mike. I'm a frontend developer who likes making the
+            internet just lil bit prettier
+          </Title>
+          <SubText>...and I'd love to work with you </SubText>
           <a href="#contact" onClick={(e) => handleClick("contact", e)}>
             <CTA>
               Get in touch &nbsp;{" "}

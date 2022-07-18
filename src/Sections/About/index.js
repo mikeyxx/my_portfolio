@@ -145,10 +145,9 @@ const About = () => {
               <img src={human} alt="Hand" width="400" height="400" />
             </Human>
             <Text>
-              Hello there! I'm a FRONTEND Developer who is very passionate about
-              delivering an engaging user experience using JavaScript and React.{" "}
-              <br /> Below is an overview of some of the things I can help you
-              with:{" "}
+              I'm passionate about creating an engaging user experience using
+              JavaScript and React. <br /> Below is an overview of some of the
+              things I can help you with:{" "}
               <ul>
                 <li>
                   Building small and medium sized websites, landing pages from
