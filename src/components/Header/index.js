@@ -237,9 +237,6 @@ const Header = () => {
         <a href="#about" onClick={(e) => handleClick("about", e)}>
           About Me
         </a>
-        <a href="#skills" onClick={(e) => handleClick("skills", e)}>
-          Skills
-        </a>
         <a href="#projects" onClick={(e) => handleClick("projects", e)}>
           Projects
         </a>

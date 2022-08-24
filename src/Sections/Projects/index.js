@@ -7,7 +7,7 @@ import { ImGithub } from "react-icons/im";
 
 const index = () => {
   return (
-    <div className="projectContainer">
+    <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
         <div className="projectDescWrap">
