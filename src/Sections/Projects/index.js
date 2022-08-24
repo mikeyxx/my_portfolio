@@ -14,8 +14,11 @@ const index = () => {
           <img src={CocktailDB} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Fresh Cocktails</h3>
-            <h3>(HTML5, CSS3, Styled-Component, ReactJS, Redux)</h3>
-            <p>Your favourite cocktail maker.</p>
+            <h3>(HTML5, SCSS, ReactJS)</h3>
+            <p>
+              Your favourite cocktail maker. A fun app to learn how to make the
+              best cocktails available!
+            </p>
             <div className="links">
               <button>
                 <a href="https://github.com/mikeyxx/cocktaildb" target="blank">
@@ -35,7 +38,7 @@ const index = () => {
           <img src={moviesDB} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Your Favourite Movies Picker</h3>
-            <h3>(HTML5, CSS3, ReactJS)</h3>
+            <h3>(HTML5, SCSS, ReactJS, CONTEXT-API)</h3>
             <p>
               An app where you can search for your favourite movies. You can
               also save movies you will love to watch!
