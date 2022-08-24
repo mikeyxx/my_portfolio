@@ -1,0 +1,61 @@
+.projectContainer {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  font-family: "Righteous", cursive;
+}
+
+.projectContainer h3 {
+  border-bottom: 2px solid rgb(10, 11, 16);
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.projectContainer h3:last-of-type {
+  border-bottom: 2px solid rgb(99, 105, 133);
+}
+
+.projectContainer p {
+  margin: 2em 0;
+  font-weight: 300;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  margin: 2em auto;
+  gap: 5em;
+}
+
+.projectDescWrap {
+  background-color: rgb(10, 11, 16);
+}
+
+.projectDesc {
+  font-family: "Righteous", cursive;
+  color: #fff;
+  padding: 1em;
+}
+
+.projectDesc .links button {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.projectDesc .links button a {
+  color: inherit;
+}
+
+.projectDesc .links button:first-child {
+  background-color: rgb(203, 198, 198);
+}
+
+.projectDesc .links button:last-child {
+  background-color: rgb(121, 153, 146);
+}

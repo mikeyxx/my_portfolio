@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { GlobalStyle } from "./globalStyles";
-// Let's import all he components
+// Let's import all the components
 // We will use Lazy to import all components
 
 const Home = lazy(() => import("./Pages/Home"));

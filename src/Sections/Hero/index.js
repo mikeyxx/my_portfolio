@@ -210,8 +210,8 @@ const HeroSection = () => {
       <MainContent>
         <LeftBlock>
           <Title>
-            Hey there👋, I'm Mike. I'm a frontend developer who likes making the
-            internet just lil bit prettier
+            Hey there👋, I'm Mike. I'm a frontend developer. I like to make the
+            internet just little bit prettier😎
           </Title>
           <SubText>...and I'd love to work with you </SubText>
           <a href="#contact" onClick={(e) => handleClick("contact", e)}>

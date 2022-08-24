@@ -3,8 +3,7 @@
 
 import HeroSection from "../Sections/Hero";
 import About from "../Sections/About";
-import Services from "../Sections/Services";
-import Testimonials from "../Sections/Projects";
+import Projects from "../Sections/Projects";
 import Contact from "../Sections/Contact";
 import styled from "styled-components";
 
@@ -20,8 +19,7 @@ const Home = () => {
     <Container>
       <HeroSection />
       <About />
-      <Services />
-      <Testimonials />
+      <Projects />
       <Contact />
     </Container>
   );

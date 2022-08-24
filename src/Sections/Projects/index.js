@@ -1,176 +1,114 @@
-import styled from "styled-components";
-import Slider from "react-slick";
-// import * as AiIcon from "react-icons/ai";
+import React from "react";
+import CocktailDB from "../../assets/cocktaildb.gif";
+import moviesDB from "../../assets/moviesearchapi.gif";
+import miniStore from "../../assets/mini_shop.gif";
+import birthdayReminder from "../../assets/birthday_reminder.gif";
+import { ImGithub } from "react-icons/im";
 
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import Card from "../../components/Card";
-import Ministore from "../../assets/avatar-1.png";
-import BirthdayReminder from "../../assets/avatar-2.png";
-import ReactCalculator from "../../assets/avatar-3.png";
-
-const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 5rem;
-`;
-const Title = styled.h1`
-  display: inline-block;
-  font-size: calc(1rem + 1.5vw);
-  margin-top: 1rem;
-  position: relative;
-
-  &:before {
-    content: "";
-    height: 1px;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    border-bottom: 2px solid var(--purple);
-    transform: translate(-50%);
-  }
-
-  @media only screen and (max-width: 23.5em) {
-    &::before {
-      content: "";
-      border: 0;
-    }
-  }
-}
-`;
-
-const Carousel = styled.div`
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media only screen and (max-width: 40em) {
-    width: 90vw;
-  }
-
-  .slick-slider .slick-arrow:before {
-    color: var(--black);
-    font-size: 1.5rem;
-    @media only screen and (max-width: 40em) {
-      display: none;
-    }
-  }
-  .slick-slider .slick-dots button:before {
-    color: var(--black);
-    font-size: 1.5rem;
-  }
-  .slick-slide.slick-active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3rem;
-  }
-`;
-
-const Projects = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const index = () => {
   return (
-    <Section id="projects">
-      <Title>Here are a few projects I have built</Title>
-      <Carousel>
-        <Slider {...settings}>
-          <Card
-            name={
-              <>
-                <p className="appName">Mini Store</p>
-                <div className="btn">
-                  <button>
-                    <a
-                      href="https://github.com/mikeyxx/ministore"
-                      target="blank"
-                    >
-                      Code
-                    </a>{" "}
-                  </button>
-                  <button>
-                    <a
-                      href="https://react-ministore.netlify.app/"
-                      target="blank"
-                    >
-                      View live
-                    </a>
-                  </button>
-                </div>
-              </>
-            }
-            image={Ministore}
-          />
-          <Card
-            name={
-              <>
-                <p className="appName">Birthday Reminder </p>
-                <div className="btn">
-                  <button>
-                    {" "}
-                    <a
-                      href="https://github.com/mikeyxx/birthday-reminder-app"
-                      target="blank"
-                    >
-                      Code
-                    </a>{" "}
-                  </button>
-                  <button>
-                    <a
-                      href="https://birthday-rem-app.netlify.app/"
-                      target="blank"
-                    >
-                      View live
-                    </a>
-                  </button>
-                </div>
-              </>
-            }
-            image={BirthdayReminder}
-          />
-          <Card
-            name={
-              <>
-                <p className="appName">Calculator</p>
-                <div className="btn">
-                  <button>
-                    <a
-                      href="https://github.com/mikeyxx/react-calculator-application/tree/master"
-                      target="blank"
-                    >
-                      Code
-                    </a>{" "}
-                  </button>
-                  <button>
-                    <a
-                      href="https://mikeyxx.github.io/react-calculator-application/"
-                      target="blank"
-                    >
-                      View live
-                    </a>
-                  </button>
-                </div>
-              </>
-            }
-            image={ReactCalculator}
-          />
-        </Slider>
-      </Carousel>
-    </Section>
+    <div className="projectContainer">
+      <h1>Latest Projects</h1>
+      <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={CocktailDB} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Fresh Cocktails</h3>
+            <h3>(HTML5, CSS3, Styled-Component, ReactJS, Redux)</h3>
+            <p>Your favourite cocktail maker.</p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/cocktaildb" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://freshcocktailsdb.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={moviesDB} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Your Favourite Movies Picker</h3>
+            <h3>(HTML5, CSS3, ReactJS)</h3>
+            <p>
+              An app where you can search for your favourite movies. You can
+              also save movies you will love to watch!
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/moviesDB" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a
+                  href="https://my-movies-database.netlify.app/"
+                  target="blank"
+                >
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={miniStore} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Mini Store</h3>
+            <h3>(HTML5, CSS3, Styled-Components, ReactJS, Redux)</h3>
+            <p>
+              A mini ecommerce store where you can search and add your favourite
+              items into your shopping cart.
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/ministore" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://react-ministore.netlify.app/"> Live Site</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={birthdayReminder} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Birthday Reminder App</h3>
+            <h3>(HTML5, CSS3, ReactJS)</h3>
+            <p>
+              Your personal birthday reminder app! This app helps you save and
+              track the birthday of your friends and loved ones.
+            </p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/mikeyxx/birthday-reminder-app"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://birthday-rem-app.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Projects;
+export default index;
