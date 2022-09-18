@@ -86,7 +86,7 @@ const index = () => {
           <img src={birthdayReminder} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Birthday Reminder App</h3>
-            <h3>(HTML5, CSS3, ReactJS)</h3>
+            <h3>(HTML5, CSS3, Material UI, ReactJS, Firebase)</h3>
             <p>
               Your personal birthday reminder app! This app helps you save and
               track the birthday of your friends and loved ones.
