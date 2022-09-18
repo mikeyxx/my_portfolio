@@ -2,7 +2,7 @@ import React from "react";
 import CocktailDB from "../../assets/cocktaildb.gif";
 import moviesDB from "../../assets/moviesearchapi.gif";
 import miniStore from "../../assets/mini_shop.gif";
-import birthdayReminder from "../../assets/birthday_reminder.gif";
+import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
 import { ImGithub } from "react-icons/im";
 
 const index = () => {
