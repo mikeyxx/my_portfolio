@@ -94,7 +94,7 @@ const index = () => {
             <div className="links">
               <button>
                 <a
-                  href="https://github.com/mikeyxx/birthday-reminder-app"
+                  href="https://github.com/mikeyxx/birthday_app"
                   target="blank"
                 >
                   <ImGithub /> Repo
