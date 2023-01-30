@@ -4,12 +4,62 @@ import moviesDB from "../../assets/moviesearchapi.gif";
 import miniStore from "../../assets/mini_shop.gif";
 import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
 import { ImGithub } from "react-icons/im";
+import store from "../../assets/store.gif";
+import lendsqr from "../../assets/lendsqr.gif";
 
 const index = () => {
   return (
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={store} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Fresh Cocktails</h3>
+            <h3>(HTML5, SCSS, ReactJS)</h3>
+            <p>
+              Your favourite cocktail maker. A fun app to learn how to make the
+              best cocktails available!
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/cocktaildb" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://freshcocktailsdb.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={lendsqr} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Fresh Cocktails</h3>
+            <h3>(HTML5, SCSS, ReactJS)</h3>
+            <p>
+              Your favourite cocktail maker. A fun app to learn how to make the
+              best cocktails available!
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/cocktaildb" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://freshcocktailsdb.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={CocktailDB} alt="" width="350" height="400" />
           <div className="projectDesc">
