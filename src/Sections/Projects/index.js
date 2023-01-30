@@ -18,7 +18,7 @@ const index = () => {
             <h3>Store</h3>
             <h3>(HTML5, Tailwind CSS, ReactJS, TypeScript and Redux)</h3>
             <p>
-              The Store is an online store with some of the functionalities of
+              The "Store" is an online store with some of the functionalities of
               the popular ecommerce stores where you can search and add your
               favourite items into your shopping cart.
             </p>
