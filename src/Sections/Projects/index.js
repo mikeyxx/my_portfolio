@@ -15,7 +15,7 @@ const index = () => {
         <div className="projectDescWrap">
           <img src={store} alt="" width="350" height="400" />
           <div className="projectDesc">
-            <h3>Fresh Cocktails</h3>
+            <h3>Store</h3>
             <h3>(HTML5, Tailwind CSS, ReactJS, TypeScript and Redux)</h3>
             <p>
               The Store is an online store with some of the functionalities of the popular ecommerce stores where you can search and add your favourite items into your                shopping cart.
@@ -38,7 +38,7 @@ const index = () => {
         <div className="projectDescWrap">
           <img src={lendsqr} alt="" width="350" height="400" />
           <div className="projectDesc">
-            <h3>Fresh Cocktails</h3>
+            <h3>A lending-as-a-service dashboard</h3>
             <h3>(HTML5, Tailwind CSS, ReactJS)</h3>
             <p>
                A Lending-as-a-Service solution dashboard that powers lenders
