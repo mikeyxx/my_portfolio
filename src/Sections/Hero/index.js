@@ -91,31 +91,11 @@ const LeftBlock = styled.div`
     filter: drop-shadow(2px 4px 6px var(--black));
   }
 `;
-// const Topic = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: var(--nav);
-//   font-weight: 700;
-//   font-size: calc(0.4rem + 0.4vw);
-//   padding: 0.5rem 1rem;
-//   border-radius: 20px;
-//   letter-spacing: 1.2px;
-
-//   @media only screen and (max-width: 40em) {
-//     font-size: calc(0.8rem + 0.4vw);
-//     margin-bottom: 1rem;
-//   }
-// `;
-// const Circle = styled.span`
-//   display: inline-block;
-//   width: 1rem;
-//   height: 1rem;
-//   border-radius: 50%;
-//   background-color: var(--purple);
-//   margin-right: 0.5rem;
-// `;
-const Title = styled.h1`
+const Title = styled.span`
+  font-size: calc(1rem + 1vw);
+  padding-bottom: 1rem;
+`;
+const Intro = styled.h1`
   font-size: calc(1rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
@@ -156,6 +136,12 @@ const CTA = styled.button`
   @media only screen and (max-width: 40em) {
     font-size: calc(0.8rem + 0.4vw);
   }
+`;
+
+const ContactContainer = styled.div`
+  display: flex;
+  // justify-content: center;
+  align-items: center;
 `;
 const MobileSvg = styled.img`
   max-width: 100%;
@@ -209,17 +195,27 @@ const HeroSection = () => {
 
       <MainContent>
         <LeftBlock>
-          <Title>
+          <Title>- Web Developer</Title>
+          <Intro>
             Hey there👋, I'm Mike. I'm a frontend developer. I like to make the
             internet just little bit prettier😎
-          </Title>
+          </Intro>
           <SubText>...and I'd love to work with you </SubText>
-          <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-            <CTA>
-              Get in touch &nbsp;{" "}
-              <img src={Arrow} alt="CTA" width="400" height="400" />
-            </CTA>
-          </a>
+          <ContactContainer>
+            <a href="#contact" onClick={(e) => handleClick("contact", e)}>
+              <CTA>
+                Get in touch &nbsp;{" "}
+                <img src={Arrow} alt="CTA" width="400" height="400" />
+              </CTA>
+            </a>
+            <a
+              href="https://registry.jsonresume.org/mikeyxx/"
+              target="_blank"
+              className="resume"
+            >
+              Download Resume
+            </a>
+          </ContactContainer>
         </LeftBlock>
         <MobileSvg src={Mobile} alt="Mobile Svg" width="400" height="400" />
       </MainContent>

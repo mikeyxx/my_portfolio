@@ -4,12 +4,66 @@ import moviesDB from "../../assets/moviesearchapi.gif";
 import miniStore from "../../assets/mini_shop.gif";
 import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
 import { ImGithub } from "react-icons/im";
+import store from "../../assets/store.gif";
+import lendsqr from "../../assets/lendsqr.gif";
 
 const index = () => {
   return (
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={store} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Store</h3>
+            <h3>(HTML5, Tailwind CSS, ReactJS, TypeScript and Redux)</h3>
+            <p>
+              The "Store" is an online store with some of the functionalities of
+              the popular ecommerce stores where you can search and add your
+              favourite items into your shopping cart.
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/store" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://mikes-store.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={lendsqr} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>A lending-as-a-service dashboard</h3>
+            <h3>(HTML5, Tailwind CSS, ReactJS)</h3>
+            <p>A Lending-as-a-Service solution dashboard that powers lenders</p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/mikeyxx/lendsqr-banking-financial-service-dashboard"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a
+                  href="https://banking-financial-service-dashboard.netlify.app/"
+                  target="blank"
+                >
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={CocktailDB} alt="" width="350" height="400" />
           <div className="projectDesc">
