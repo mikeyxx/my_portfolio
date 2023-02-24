@@ -1,11 +1,11 @@
 import React from "react";
 import CocktailDB from "../../assets/cocktaildb.gif";
 import moviesDB from "../../assets/moviesearchapi.gif";
-import miniStore from "../../assets/mini_shop.gif";
 import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
 import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
 import lendsqr from "../../assets/lendsqr.gif";
+import upskill from "../../assets/upskill.jpg";
 
 const index = () => {
   return (
@@ -30,6 +30,37 @@ const index = () => {
               </button>{" "}
               <button>
                 <a href="https://mikes-store.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={upskill} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Upskill</h3>
+            <h3>
+              (ReactJS, Redux Toolkit, React Router, Tailwind, Axios,
+              Express.js, Supabase, PostgreSQL)
+            </h3>
+            <p>
+              Upskill is a social platform designed to bring people together and
+              forge communities based around co-working, co-learning and skill
+              sharing.
+            </p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/chingu-voyages/UpSkill"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://upskill-client.onrender.com/" target="blank">
                   {" "}
                   Live Site
                 </a>
@@ -64,6 +95,7 @@ const index = () => {
             </div>
           </div>
         </div>
+
         <div className="projectDescWrap">
           <img src={CocktailDB} alt="" width="350" height="400" />
           <div className="projectDesc">
@@ -111,27 +143,6 @@ const index = () => {
                   {" "}
                   Live Site
                 </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="projectDescWrap">
-          <img src={miniStore} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>Mini Store</h3>
-            <h3>(HTML5, CSS3, Styled-Components, ReactJS, Redux)</h3>
-            <p>
-              A mini ecommerce store where you can search and add your favourite
-              items into your shopping cart.
-            </p>
-            <div className="links">
-              <button>
-                <a href="https://github.com/mikeyxx/ministore" target="blank">
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a href="https://react-ministore.netlify.app/"> Live Site</a>
               </button>
             </div>
           </div>
