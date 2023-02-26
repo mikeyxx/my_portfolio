@@ -6,12 +6,44 @@ import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
 import lendsqr from "../../assets/lendsqr.gif";
 import upskill from "../../assets/upskill.jpg";
+import jobApi from "../../assets/jobs-api.gif";
 
 const index = () => {
   return (
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={jobApi} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Jobs Manager App</h3>
+            <h3>
+              (MongoDB, Express, ReactJS, NodeJS, TypeScript, Redux and Tailwind
+              CSS)
+            </h3>
+            <p>
+              Jobio is a job tracking application designed to help individuals
+              and organizations keep track of job applications and hiring
+              processes. It allows users to log job applications, track the
+              status of each application, and set reminders for follow-up tasks
+              such as sending thank-you notes, scheduling interviews, and
+              checking on application status.
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/jobs-api" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://jobs-manager-api.cyclic.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={store} alt="" width="350" height="400" />
           <div className="projectDesc">
