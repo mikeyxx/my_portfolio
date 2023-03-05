@@ -7,6 +7,7 @@ import store from "../../assets/store.gif";
 import lendsqr from "../../assets/lendsqr.gif";
 import upskill from "../../assets/upskill.jpg";
 import jobApi from "../../assets/jobs-api.gif";
+import smarty from "../../assets/smarty.gif";
 
 const index = () => {
   return (
@@ -16,10 +17,10 @@ const index = () => {
         <div className="projectDescWrap">
           <img src={jobApi} alt="" width="350" height="400" />
           <div className="projectDesc">
-            <h3>Jobs Manager App</h3>
+            <h3>Jobio</h3>
             <h3>
               (MongoDB, Express, ReactJS, NodeJS, TypeScript, Redux and Tailwind
-              CSS)
+              CSS, Cyclic)
             </h3>
             <p>
               Jobio is a job tracking application designed to help individuals
@@ -37,6 +38,37 @@ const index = () => {
               </button>{" "}
               <button>
                 <a href="https://jobs-manager-api.cyclic.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
+          <img src={smarty} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Smarty Pants</h3>
+            <h3>
+              (MongoDB, Express, ReactJS, NodeJS, TypeScript, Redux and Tailwind
+              CSS, Cyclic)
+            </h3>
+            <p>
+              Welcome to Smarty Pants! The application is the ultimate brain
+              workout disguised as pure fun. Whether you're a trivia buff or
+              just looking to pass the time, we've got you covered with a wide
+              variety of categories and levels of difficulty. Put on your
+              thinking cap and get ready to test your knowledge against the best
+              of the best. Will you be our next quiz champion? Let's find out!
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/quiz-app" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://smartypants.cyclic.app/" target="blank">
                   {" "}
                   Live Site
                 </a>
