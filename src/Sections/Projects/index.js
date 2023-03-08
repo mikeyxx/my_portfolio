@@ -26,9 +26,8 @@ const index = () => {
               Jobio is a job tracking application designed to help individuals
               and organizations keep track of job applications and hiring
               processes. It allows users to log job applications, track the
-              status of each application, and set reminders for follow-up tasks
-              such as sending thank-you notes, scheduling interviews, and
-              checking on application status.
+              status of each application, schedule interviews, and
+              check on application status.
             </p>
             <div className="links">
               <button>
