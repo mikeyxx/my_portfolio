@@ -65,9 +65,8 @@ const index = () => {
               Jobio is a job tracking application designed to help individuals
               and organizations keep track of job applications and hiring
               processes. It allows users to log job applications, track the
-              status of each application, and set reminders for follow-up tasks
-              such as sending thank-you notes, scheduling interviews, and
-              checking on application status.
+              status of each application, schedule interviews, and
+              check on application status.
             </p>
             <div className="links">
               <button>
@@ -95,8 +94,8 @@ const index = () => {
             <p>
               Welcome to Smarty Pants! The application is the ultimate brain
               workout disguised as pure fun. Whether you're a trivia buff or
-              just looking to pass the time, we've got you covered with a wide
-              variety of categories and levels of difficulty. Put on your
+              just looking to pass the time, Smarty Pants has you covered with a wide
+              variety of questions. Put on your
               thinking cap and get ready to test your knowledge against the best
               of the best. Will you be our next quiz champion? Let's find out!
             </p>
