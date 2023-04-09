@@ -8,12 +8,51 @@ import lendsqr from "../../assets/lendsqr.gif";
 import upskill from "../../assets/upskill.jpg";
 import jobApi from "../../assets/jobs-api.gif";
 import smarty from "../../assets/smarty.gif";
+import chat from "../../assets/chirpchat.jpg";
 
 const index = () => {
   return (
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={chat} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>ChirpChat</h3>
+            <h3>
+              (MongoDB, Express, ReactJS, NodeJS, TypeScript, Redux and Tailwind
+              CSS, Cyclic)
+            </h3>
+            <p>
+              ChirpChat is a social media application that allows users to
+              connect with their friends and family, and share their thoughts
+              and experiences with the world. With ChirpChat, you can easily
+              create a new user account, log in with your unique username and
+              password, and start making posts about your day-to-day activities.
+              Not only can you create your own posts, but you can also like and
+              view other users' posts with ease. Whether you're sharing a funny
+              meme, a thought-provoking article, or just updating your friends
+              on your latest adventures, ChirpChat makes it easy to stay
+              connected and engaged..
+            </p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/mikeyxx/socials-media-app"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://chirpchat.cyclic.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={jobApi} alt="" width="350" height="400" />
           <div className="projectDesc">
