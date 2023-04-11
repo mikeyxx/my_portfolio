@@ -195,10 +195,9 @@ const HeroSection = () => {
 
       <MainContent>
         <LeftBlock>
-          <Title>- Web Developer</Title>
+          <Title>- FullStack Web Developer👨‍💻</Title>
           <Intro>
-            Hey there👋, I'm Mike. I'm a frontend developer. I like to make the
-            internet just little bit prettier😎
+            I enjoy writing code, solving problems and building things
           </Intro>
           <SubText>...and I'd love to work with you </SubText>
           <ContactContainer>
@@ -209,7 +208,7 @@ const HeroSection = () => {
               </CTA>
             </a>
             <a
-              href="https://registry.jsonresume.org/mikeyxx/"
+              href="https://drive.google.com/file/d/1vdn3eyTmG68SVBJZ_V7ulr-8jTkbbRCm/view?usp=sharing"
               target="_blank"
               className="resume"
             >
