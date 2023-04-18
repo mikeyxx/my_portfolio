@@ -61,7 +61,7 @@ const Contact = () => {
     <ContactSection id="contact">
       <Title>Get in touch</Title>
       <Icon>
-        <a href="https://Twitter.com/topboy_mikey" target="blank">
+        <a href="https://Twitter.com/mikeysays_" target="blank">
           <img
             src={Twitter}
             alt="Twitter"
@@ -73,7 +73,7 @@ const Contact = () => {
           />
         </a>
         <a
-          href="https://linkedin.com/in/michael-27
+          href="https://www.linkedin.com/in/michaelogbo/
 "
           target="blank"
         >
