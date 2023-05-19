@@ -6,7 +6,7 @@ import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
 import lendsqr from "../../assets/lendsqr.gif";
 import upskill from "../../assets/upskill.jpg";
-import jobApi from "../../assets/jobs-api.gif";
+import note from "../../assets/note.jpg";
 import smarty from "../../assets/smarty.gif";
 import chat from "../../assets/chirpchat.jpg";
 
@@ -54,28 +54,28 @@ const index = () => {
           </div>
         </div>
         <div className="projectDescWrap">
-          <img src={jobApi} alt="" width="350" height="400" />
+          <img src={note} alt="" width="350" height="400" />
           <div className="projectDesc">
-            <h3>Jobio</h3>
-            <h3>
-              (MongoDB, Express, ReactJS, NodeJS, TypeScript, Redux and Tailwind
-              CSS, Cyclic)
-            </h3>
+            <h3>Note App</h3>
+            <h3>(React and Localstorage)</h3>
             <p>
-              Jobio is a job tracking application designed to help individuals
-              and organizations keep track of job applications and hiring
-              processes. It allows users to log job applications, track the
-              status of each application, schedule interviews, and
-              check on application status.
+              The NoteApp is an application designed to help users organize and
+              manage their personal or professional notes in a digital format.
+              It provides a convenient way to create, edit, and store various
+              types of notes, such as text notes, to-do lists, and reminders.
+              Users can easily capture and organize their ideas, thoughts,
+              tasks, and important information in a structured and searchable
+              manner. With a note application, users can keep their notes easily
+              accessible and well-organized.
             </p>
             <div className="links">
               <button>
-                <a href="https://github.com/mikeyxx/jobs-api" target="blank">
+                <a href="https://github.com/mikeyxx/note-app" target="blank">
                   <ImGithub /> Repo
                 </a>
               </button>{" "}
               <button>
-                <a href="https://jobs-manager-api.cyclic.app/" target="blank">
+                <a href="https://use-note-app.netlify.app/" target="blank">
                   {" "}
                   Live Site
                 </a>
@@ -94,10 +94,10 @@ const index = () => {
             <p>
               Welcome to Smarty Pants! The application is the ultimate brain
               workout disguised as pure fun. Whether you're a trivia buff or
-              just looking to pass the time, Smarty Pants has you covered with a wide
-              variety of questions. Put on your
-              thinking cap and get ready to test your knowledge against the best
-              of the best. Will you be our next quiz champion? Let's find out!
+              just looking to pass the time, Smarty Pants has you covered with a
+              wide variety of questions. Put on your thinking cap and get ready
+              to test your knowledge against the best of the best. Will you be
+              our next quiz champion? Let's find out!
             </p>
             <div className="links">
               <button>
@@ -170,33 +170,6 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className="projectDescWrap">
-          <img src={lendsqr} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>A lending-as-a-service dashboard</h3>
-            <h3>(HTML5, Tailwind CSS, ReactJS)</h3>
-            <p>A Lending-as-a-Service solution dashboard that powers lenders</p>
-            <div className="links">
-              <button>
-                <a
-                  href="https://github.com/mikeyxx/lendsqr-banking-financial-service-dashboard"
-                  target="blank"
-                >
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a
-                  href="https://banking-financial-service-dashboard.netlify.app/"
-                  target="blank"
-                >
-                  {" "}
-                  Live Site
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
 
         <div className="projectDescWrap">
           <img src={CocktailDB} alt="" width="350" height="400" />
@@ -222,33 +195,7 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className="projectDescWrap">
-          <img src={moviesDB} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>Your Favourite Movies Picker</h3>
-            <h3>(HTML5, SCSS, ReactJS, CONTEXT-API)</h3>
-            <p>
-              An app where you can search for your favourite movies. You can
-              also save movies you will love to watch!
-            </p>
-            <div className="links">
-              <button>
-                <a href="https://github.com/mikeyxx/moviesDB" target="blank">
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a
-                  href="https://my-movies-database.netlify.app/"
-                  target="blank"
-                >
-                  {" "}
-                  Live Site
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
+
         <div className="projectDescWrap">
           <img src={birthdayReminder} alt="" width="350" height="400" />
           <div className="projectDesc">
