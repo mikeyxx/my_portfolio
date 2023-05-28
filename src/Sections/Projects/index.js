@@ -1,20 +1,55 @@
 import React from "react";
 import CocktailDB from "../../assets/cocktaildb.gif";
-import moviesDB from "../../assets/moviesearchapi.gif";
 import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
 import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
-import lendsqr from "../../assets/lendsqr.gif";
 import upskill from "../../assets/upskill.jpg";
 import note from "../../assets/note.jpg";
 import smarty from "../../assets/smarty.gif";
 import chat from "../../assets/chirpchat.jpg";
+import jobApp from "../../assets/jobApp.jpg";
 
 const index = () => {
   return (
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={jobApp} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Jobio</h3>
+            <h3>
+              (TypeScript, ReactJS, Redux Toolkit, Tailwind, Axios, Express,
+              PostgreSQL and NodeJS)
+            </h3>
+            <p>
+              Jobio is a fullstack jobs management application that draws
+              inspiration from the Indeed Jobs platform. Jobio was built using
+              an SQL database (PostgreSQL), NodeJS, Express and React. All
+              posted jobs are displayed on the home URL where a user without
+              registering can check out any job and apply. In other to advertise
+              a job on the platform, a user would have to register by clicking a
+              link on the menu which prompts the user to register or login after
+              which the user then creates a job and the homepage is immediately
+              updated with the new created job. Also, a registered user can only
+              delete/update the job he created. See below a video demo of the
+              application.
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/jobio" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://jobio-app.netlify.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={chat} alt="" width="350" height="400" />
           <div className="projectDesc">
