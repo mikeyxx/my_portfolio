@@ -8,6 +8,7 @@ import note from "../../assets/note.jpg";
 import smarty from "../../assets/smarty.gif";
 import chat from "../../assets/chirpchat.jpg";
 import jobApp from "../../assets/jobApp.jpg";
+import smartbasket from "../../assets/smartbasket.jpg";
 
 const index = () => {
   return (
@@ -89,7 +90,7 @@ const index = () => {
           </div>
         </div>
         <div className="projectDescWrap">
-          <img src={CocktailDB} alt="" width="350" height="400" />
+          <img src={smartbasket} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Smartbasket</h3>
             <h3>(JavaScript, React, Firebase, Tailwindcss)</h3>
