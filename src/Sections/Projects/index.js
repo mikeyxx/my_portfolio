@@ -89,6 +89,38 @@ const index = () => {
           </div>
         </div>
         <div className="projectDescWrap">
+          <img src={CocktailDB} alt="" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>Smartbasket</h3>
+            <h3>(JavaScript, React, Firebase, Tailwindcss)</h3>
+            <p>
+              Smartbasket is an intuitive app that saves users time by
+              predicting which items to buy next based on their shopping habits.
+              Say goodbye to mundane shopping lists and hello to a shopping
+              experience that is delightful!
+            </p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/the-collab-lab/tcl-59-smart-shopping-list"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a
+                  href="https://tcl-59-smart-shopping-list.web.app/"
+                  target="blank"
+                >
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
           <img src={note} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Note App</h3>
@@ -205,32 +237,6 @@ const index = () => {
             </div>
           </div>
         </div>
-
-        <div className="projectDescWrap">
-          <img src={CocktailDB} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>Fresh Cocktails</h3>
-            <h3>(HTML5, SCSS, ReactJS)</h3>
-            <p>
-              Your favourite cocktail maker. A fun app to learn how to make the
-              best cocktails available!
-            </p>
-            <div className="links">
-              <button>
-                <a href="https://github.com/mikeyxx/cocktaildb" target="blank">
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a href="https://freshcocktailsdb.netlify.app/" target="blank">
-                  {" "}
-                  Live Site
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-
         <div className="projectDescWrap">
           <img src={birthdayReminder} alt="" width="350" height="400" />
           <div className="projectDesc">
