@@ -1,6 +1,5 @@
 import React from "react";
-import CocktailDB from "../../assets/cocktaildb.gif";
-import birthdayReminder from "../../assets/birthdayApp_AdobeExpress.gif";
+import PromptVerse from "../../assets/promptverse.jpg";
 import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
 import upskill from "../../assets/upskill.jpg";
@@ -16,6 +15,30 @@ const index = () => {
       <h1>Latest Projects</h1>
       <div className="wrap">
         <div className="projectDescWrap">
+          <img src={PromptVerse} alt="promptverse" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>PromptVerse</h3>
+            <h3>(Next.js, Tailwind, fetchAPI, MongoDB)</h3>
+            <p>
+              PromptVerse is an open-source AI prompting tool for modern world
+              to discover, create and share creative prompts
+            </p>
+            <div className="links">
+              <button>
+                <a href="https://github.com/mikeyxx/promptverse" target="blank">
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a href="https://promptverse-lemon.vercel.app/" target="blank">
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projectDescWrap">
           <img src={jobApp} alt="" width="350" height="400" />
           <div className="projectDesc">
             <h3>Jobio</h3>
@@ -26,15 +49,7 @@ const index = () => {
             <p>
               Jobio is a fullstack jobs management application that draws
               inspiration from the Indeed Jobs platform. Jobio was built using
-              an SQL database (PostgreSQL), NodeJS, Express and React. All
-              posted jobs are displayed on the home URL where a user without
-              registering can check out any job and apply. In other to advertise
-              a job on the platform, a user would have to register by clicking a
-              link on the menu which prompts the user to register or login after
-              which the user then creates a job and the homepage is immediately
-              updated with the new created job. Also, a registered user can only
-              delete/update the job he created. See below a video demo of the
-              application.
+              an SQL database.
             </p>
             <div className="links">
               <button>
@@ -62,14 +77,7 @@ const index = () => {
             <p>
               ChirpChat is a social media application that allows users to
               connect with their friends and family, and share their thoughts
-              and experiences with the world. With ChirpChat, you can easily
-              create a new user account, log in with your unique username and
-              password, and start making posts about your day-to-day activities.
-              Not only can you create your own posts, but you can also like and
-              view other users' posts with ease. Whether you're sharing a funny
-              meme, a thought-provoking article, or just updating your friends
-              on your latest adventures, ChirpChat makes it easy to stay
-              connected and engaged..
+              and experiences with the world.
             </p>
             <div className="links">
               <button>
@@ -129,12 +137,6 @@ const index = () => {
             <p>
               The NoteApp is an application designed to help users organize and
               manage their personal or professional notes in a digital format.
-              It provides a convenient way to create, edit, and store various
-              types of notes, such as text notes, to-do lists, and reminders.
-              Users can easily capture and organize their ideas, thoughts,
-              tasks, and important information in a structured and searchable
-              manner. With a note application, users can keep their notes easily
-              accessible and well-organized.
             </p>
             <div className="links">
               <button>
@@ -161,11 +163,7 @@ const index = () => {
             </h3>
             <p>
               Welcome to Smarty Pants! The application is the ultimate brain
-              workout disguised as pure fun. Whether you're a trivia buff or
-              just looking to pass the time, Smarty Pants has you covered with a
-              wide variety of questions. Put on your thinking cap and get ready
-              to test your knowledge against the best of the best. Will you be
-              our next quiz champion? Let's find out!
+              workout disguised as pure fun.
             </p>
             <div className="links">
               <button>
@@ -231,33 +229,6 @@ const index = () => {
               </button>{" "}
               <button>
                 <a href="https://upskill-client.onrender.com/" target="blank">
-                  {" "}
-                  Live Site
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="projectDescWrap">
-          <img src={birthdayReminder} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>Birthday Reminder App</h3>
-            <h3>(HTML5, CSS3, Material UI, ReactJS, Firebase)</h3>
-            <p>
-              Your personal birthday reminder app! This app helps you save and
-              track the birthday of your friends and loved ones.
-            </p>
-            <div className="links">
-              <button>
-                <a
-                  href="https://github.com/mikeyxx/birthday_app"
-                  target="blank"
-                >
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a href="https://birthday-rem-app.netlify.app/" target="blank">
                   {" "}
                   Live Site
                 </a>

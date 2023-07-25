@@ -210,6 +210,7 @@ const HeroSection = () => {
             <a
               href="https://drive.google.com/file/d/1vdn3eyTmG68SVBJZ_V7ulr-8jTkbbRCm/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
               className="resume"
             >
               Download Resume
