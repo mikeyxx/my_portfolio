@@ -7,7 +7,6 @@ import note from "../../assets/note.jpg";
 import smarty from "../../assets/smarty.gif";
 import chat from "../../assets/chirpchat.jpg";
 import jobApp from "../../assets/jobApp.jpg";
-import smartbasket from "../../assets/smartbasket.jpg";
 
 const index = () => {
   return (
