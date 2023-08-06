@@ -3,7 +3,7 @@ import PromptVerse from "../../assets/promptverse.jpg";
 import { ImGithub } from "react-icons/im";
 import store from "../../assets/store.gif";
 import upskill from "../../assets/upskill.jpg";
-import note from "../../assets/note.jpg";
+import shirtDesign from "../../assets/3D Shirt Studio.jpg";
 import smarty from "../../assets/smarty.gif";
 import chat from "../../assets/chirpchat.jpg";
 import jobApp from "../../assets/jobApp.jpg";
@@ -13,6 +13,36 @@ const index = () => {
     <div className="projectContainer" id="projects">
       <h1>Latest Projects</h1>
       <div className="wrap">
+        <div className="projectDescWrap">
+          <img src={shirtDesign} alt="shirt design" width="350" height="400" />
+          <div className="projectDesc">
+            <h3>3D Shirt Design App</h3>
+            <h3>(React, ThreeJS, Tailwind, fetchAPI)</h3>
+            <p>
+              Create a Fashion Statement with Our Cutting-Edge 3D Customization
+              Tool. Unleash your imagination and define your own style
+            </p>
+            <div className="links">
+              <button>
+                <a
+                  href="https://github.com/mikeyxx/3D_shirt_studio"
+                  target="blank"
+                >
+                  <ImGithub /> Repo
+                </a>
+              </button>{" "}
+              <button>
+                <a
+                  href="https://3d-shirt-design-studio.vercel.app/"
+                  target="blank"
+                >
+                  {" "}
+                  Live Site
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="projectDescWrap">
           <img src={PromptVerse} alt="promptverse" width="350" height="400" />
           <div className="projectDesc">
@@ -97,30 +127,6 @@ const index = () => {
           </div>
         </div>
 
-        <div className="projectDescWrap">
-          <img src={note} alt="" width="350" height="400" />
-          <div className="projectDesc">
-            <h3>Note App</h3>
-            <h3>(React and Localstorage)</h3>
-            <p>
-              The NoteApp is an application designed to help users organize and
-              manage their personal or professional notes in a digital format.
-            </p>
-            <div className="links">
-              <button>
-                <a href="https://github.com/mikeyxx/note-app" target="blank">
-                  <ImGithub /> Repo
-                </a>
-              </button>{" "}
-              <button>
-                <a href="https://use-note-app.netlify.app/" target="blank">
-                  {" "}
-                  Live Site
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
         <div className="projectDescWrap">
           <img src={smarty} alt="" width="350" height="400" />
           <div className="projectDesc">
