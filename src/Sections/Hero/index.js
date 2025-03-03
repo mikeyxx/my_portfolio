@@ -8,9 +8,9 @@ import Mobile from "../../assets/mobile.svg";
 import { useState } from "react";
 
 const dance = keyframes`
-0% {transform: translateY(-5px)}
-50% {transform: translateY(10px)}
-100% {transform: translateY(-5px)}
+  0% {transform: translateY(-5px)}
+  50% {transform: translateY(10px)}
+  100% {transform: translateY(-5px)}
 `;
 
 const HerosSection = styled.div`
@@ -180,46 +180,46 @@ const HeroSection = () => {
     ScrollUp(id, e);
   };
   return (
-    <HerosSection id="home">
-      <Blobs>
-        <PinkBlob>
-          <img src={Pink} alt="Pink Blob" width="400" height="400" />
-        </PinkBlob>
-        <WhiteBlob>
-          <img src={White} alt="Pink Blob" width="400" height="400" />
-        </WhiteBlob>
-        <PurpleBlob>
-          <img src={Purple} alt="Pink Blob" width="400" height="400" />
-        </PurpleBlob>
-      </Blobs>
+      <HerosSection id="home">
+        <Blobs>
+          <PinkBlob>
+            <img src={Pink} alt="Pink Blob" width="400" height="400" />
+          </PinkBlob>
+          <WhiteBlob>
+            <img src={White} alt="Pink Blob" width="400" height="400" />
+          </WhiteBlob>
+          <PurpleBlob>
+            <img src={Purple} alt="Pink Blob" width="400" height="400" />
+          </PurpleBlob>
+        </Blobs>
 
-      <MainContent>
-        <LeftBlock>
-          <Title>- FullStack Web Developer👨‍💻</Title>
-          <Intro>
-            I enjoy writing code, solving problems and building things
-          </Intro>
-          <SubText>...and I'd love to work with you </SubText>
-          <ContactContainer>
-            <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-              <CTA>
-                Get in touch &nbsp;{" "}
-                <img src={Arrow} alt="CTA" width="400" height="400" />
-              </CTA>
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1vdn3eyTmG68SVBJZ_V7ulr-8jTkbbRCm/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="resume"
-            >
-              Download Resume
-            </a>
-          </ContactContainer>
-        </LeftBlock>
-        <MobileSvg src={Mobile} alt="Mobile Svg" width="400" height="400" />
-      </MainContent>
-    </HerosSection>
+        <MainContent>
+          <LeftBlock>
+            <Title>Full-Stack Software Engineer | Web & Mobile Applications Developer</Title>
+            <Intro>
+              I'm passionate about crafting scalable, user-centric applications that solve real-world problems and deliver exceptional digital experiences.
+            </Intro>
+            <SubText>Let's collaborate to bring your ideas to life.</SubText>
+            <ContactContainer>
+              <a href="#contact" onClick={(e) => handleClick("contact", e)}>
+                <CTA>
+                  Get in touch &nbsp;{" "}
+                  <img src={Arrow} alt="CTA" width="400" height="400" />
+                </CTA>
+              </a>
+              {/*<a*/}
+              {/*  href="https://drive.google.com/file/d/1vdn3eyTmG68SVBJZ_V7ulr-8jTkbbRCm/view?usp=sharing"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noreferrer"*/}
+              {/*  className="resume"*/}
+              {/*>*/}
+              {/*  Download Resume*/}
+              {/*</a>*/}
+            </ContactContainer>
+          </LeftBlock>
+          <MobileSvg src={Mobile} alt="Mobile Svg" width="400" height="400" />
+        </MainContent>
+      </HerosSection>
   );
 };
 

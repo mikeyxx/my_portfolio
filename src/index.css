@@ -25,17 +25,17 @@
 }
 
 .wrap {
-  display: grid;
-  gap: 2em;
+  /*display: grid;*/
+  /*gap: 2em;*/
   margin: 1em auto;
 }
 
 @media only screen and (min-width: 700px) {
   .wrap {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, minmax(280px, 1fr));*/
     margin: 2em auto;
-    gap: 3em;
+    /*gap: 3em;*/
   }
 }
 
